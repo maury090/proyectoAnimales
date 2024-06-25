@@ -7,6 +7,6 @@ def index(request):
     context={}
     return render(request, 'animales/home.html',context)
 
-def adopcion_perrito(request):
+def auspiciadores(request):
     context={}
-    return render(request, 'animales/adopcion_perritos.html',context)
+    return render (request, 'animales/auspiciadores.html',context)
