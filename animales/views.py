@@ -23,13 +23,22 @@ def adopcionP2(request):
     context={}
     return render (request, 'animales/adopcion_perrito2.html',context)
 
+def perritoAdulto(request):
+    context={}
+    return render (request, 'animales/perrito_adulto.html',context)
+
+def perritoCachorro(request):
+    context={}
+    return render (request, 'animales/perrito_cachorro.html',context)
+
 def adopcionG(request):
     context={}
     return render (request, 'animales/adopcion_gatito.html',context)
 
-def perritoAdulto(request):
+def gatitoCachorro(request):
     context={}
-    return render (request, 'animales/perrito_adulto.html',context)
-def perritoCachorro(request):
+    return render (request, 'animales/gatito_cachorro.html',context)
+
+def gatoAdulto(request):
     context={}
-    return render (request, 'animales/perrito_cachorro.html',context)
+    return render(request, 'animales/gato_adulto.html',context)
