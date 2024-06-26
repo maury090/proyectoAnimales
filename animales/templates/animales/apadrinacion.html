@@ -15,12 +15,12 @@
         <div class="encabezado">
             <img src='{% static "img/logo.png"%}' alt="" id="imagen_logo">
             <!--<ul class="nav justify-content-center">-->
-            <a href="home.html" class="enlace_header">Inicio</a>
+            <a href="{% url 'index'%}" class="enlace_header">Inicio</a>
             <div class="dropdown">
                 <button class="enlace_header">Adopción</button>
                 <div class="desplegable_header">
-                    <a href="adopcion_perrito.html">Perritos</a>
-                    <a href="adopcion_gatito.html">Gatitos</a>
+                    <a href="{% url 'adopcionP'%}">Perritos</a>
+                    <a href="{% url 'adopcionG'%}">Gatitos</a>
                 </div>
             </div>
             <div class="dropdown">
@@ -28,13 +28,13 @@
                 <div class="desplegable_header">
                     <a href="">Nuestra misión</a>
                     <a href="">Evidencia peluditos felices</a>
-                    <a href="auspiciadores.html">Auspiciadores</a>
+                    <a href="{% url 'auspiciadores'%}">Auspiciadores</a>
                 </div>
             </div>
             <div class="dropdown">
                 <button class="enlace_header"><strong>Ayudanos</strong></button>
                 <div class="desplegable_header">
-                    <a href="apadrinacion.html">Apadrina a un peludo</a>
+                    <a href="{% url 'apadrinacion'%}">Apadrina a un peludo</a>
                     <a href="">Voluntariados</a>
                     <a href="">Mascotas perdidas</a>
                     <a href="">Donaciones</a>

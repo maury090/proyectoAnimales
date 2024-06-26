@@ -15,12 +15,12 @@
         <div class="encabezado">
             <img src='{% static "img/logo.png"%}' alt="" id="imagen_logo">
             <!--<ul class="nav justify-content-center">-->
-            <a href="home.html" class="enlace_header">Inicio</a>
+            <a href="{% url 'index'%}" class="enlace_header">Inicio</a>
             <div class="dropdown">
                 <button class="enlace_header">Adopción</button>
                 <div class="desplegable_header">
-                    <a href="adopcion_perrito.html">Perritos</a>
-                    <a href="adopcion_gatito.html">Gatitos</a>
+                    <a href="{% url 'adopcionP'%}">Perritos</a>
+                    <a href="{% url 'adopcionG'%}">Gatitos</a>
                 </div>
             </div>
             <div class="dropdown">
@@ -28,13 +28,13 @@
                 <div class="desplegable_header">
                     <a href="">Nuestra misión</a>
                     <a href="">Evidencia peluditos felices</a>
-                    <a href="auspiciadores.html">Auspiciadores</a>
+                    <a href="{% url 'auspiciadores'%}">Auspiciadores</a>
                 </div>
             </div>
             <div class="dropdown">
                 <button class="enlace_header">Ayudanos</button>
                 <div class="desplegable_header">
-                    <a href="apadrinacion.html">Apadrina a un peludo</a>
+                    <a href="{% url 'apadrinacion'%}">Apadrina a un peludo</a>
                     <a href="">Voluntariados</a>
                     <a href="">Mascotas perdidas</a>
                     <a href="">Donaciones</a>
@@ -58,7 +58,7 @@
         <p><small>Las marcas, fundaciones y centros veterinarios que aparecen más arriba se han comprometido o han renovado su compromiso año a año ayudando a nuestros peludos para brindarles la mejor de las atenciones en nuestro refugio hasta la llegada de un hogar que los ame y los respete día a día.</small></p>
         <hr>
         <div align="center">
-          <button class="seleccion_peludo"><a href="home.html">Volver a pagina inicio</a></button>
+          <button class="seleccion_peludo"><a href="{% url 'index'%}">Volver a pagina inicio</a></button>
         </div>
     </div>
     <br>

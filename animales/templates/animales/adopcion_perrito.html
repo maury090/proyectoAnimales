@@ -16,12 +16,12 @@
         <div class="encabezado">
             <img src='{% static "img/logo.png" %}'alt="" id="imagen_logo">
             <!--<ul class="nav justify-content-center">-->
-            <a href="home.html" class="enlace_header">Inicio</a>
+            <a href="{% url 'index'%}" class="enlace_header">Inicio</a>
             <div class="dropdown">
                 <button class="enlace_header"><strong>Adopción</strong></button>
                 <div class="desplegable_header">
-                    <a href="adopcion_perrito.html">Perritos</a>
-                    <a href="adopcion_gatito.html">Gatitos</a>
+                    <a href="{% url 'adopcionP'%}">Perritos</a>
+                    <a href="{% url 'adopcionG'%}">Gatitos</a>
                 </div>
             </div>
             <div class="dropdown">
@@ -29,13 +29,13 @@
                 <div class="desplegable_header">
                     <a href="">Nuestra misión</a>
                     <a href="">Evidencia peluditos felices</a>
-                    <a href="">Auspiciadores</a>
+                    <a href="{% url 'auspiciadores'%}">Auspiciadores</a>
                 </div>
             </div>
             <div class="dropdown">
                 <button class="enlace_header">Ayudanos</button>
                 <div class="desplegable_header">
-                    <a href="apadrinacion.html">Apadrina a un peludo</a>
+                    <a href="{% url 'apadrinacion'%}">Apadrina a un peludo</a>
                     <a href="">Voluntariados</a>
                     <a href="">Mascotas perdidas</a>
                     <a href="">Donaciones</a>
@@ -53,9 +53,9 @@
     <br>
     <div class="filtro_peludos" align="center">
         <h6>¿Que perritos deseas ver?</h6>
-        <button class="seleccion_peludo" id="seleccion_active"><a href="adopcion_perrito.html" ><strong>Todos</strong></a></button>
-        <button class="seleccion_peludo"><a href="">Cachorros</a></button>
-        <button class="seleccion_peludo"><a href="">Adultos</a></button>
+        <button class="seleccion_peludo" id="seleccion_active"><a href="{% url 'adopcionP'%}" ><strong>Todos</strong></a></button>
+        <button class="seleccion_peludo"><a href="{% url 'perritoCachorro'%}">Cachorros</a></button>
+        <button class="seleccion_peludo"><a href="{% url 'perritoAdulto'%}">Adultos</a></button>
         <br>
     </div>
     <hr>
@@ -256,13 +256,13 @@
     <!--paginacion-->
     <ul class="pagination">
       <li class="page-item disabled" ><a class="page-link" href="#">Anterior</a></li>
-      <li class="page-item active" ><a class="page-link" href="adopcion_perrito.html">1</a></li>
-      <li class="page-item" ><a class="page-link" href="adopcion_perrito2.html">2</a></li>
-      <li class="page-item" ><a class="page-link" href="adopcion_perrito2.html">Siguiente</a></li>
+      <li class="page-item active" ><a class="page-link" href="{% url 'adopcionP'%}">1</a></li>
+      <li class="page-item" ><a class="page-link" href="{% url 'adopcionP2'%}">2</a></li>
+      <li class="page-item" ><a class="page-link" href="{% url 'adopcionP2'%}">Siguiente</a></li>
     </ul>
     <!--botom interaccion-->
     <div align="center">
-      <button class="seleccion_peludo"><a href="home.html">Volver a pagina inicio</a></button>
+      <button class="seleccion_peludo"><a href="{% url 'index'%}">Volver a pagina inicio</a></button>
     </div>
     <br>
     <!--pie de pagina-->
