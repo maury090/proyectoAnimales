@@ -10,3 +10,19 @@ def index(request):
 def auspiciadores(request):
     context={}
     return render (request, 'animales/auspiciadores.html',context)
+
+def apadrinacion(request):
+    context={}
+    return render (request, 'animales/apadrinacion.html', context)
+
+def adopcionP(request):
+    context={}
+    return render (request, 'animales/adopcion_perrito.html',context)
+
+def adopcionP2(request):
+    context={}
+    return render (request, 'animales/adopcion_perrito2.html',context)
+
+def adopcionG(request):
+    context={}
+    return render (request, 'animales/adopcion_gatito.html',context)
