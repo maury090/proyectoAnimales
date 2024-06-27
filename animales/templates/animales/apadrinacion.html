@@ -48,7 +48,13 @@
     <br>
     <!--cuerpo pagina-->
     <!--formulario apadrinacion-->
-    
+    <h1>productos</h1>
+    <br>
+    {% for producto in productos%}
+
+      {{producto.id_producto}},{{producto.nombre_producto}},{{producto.marca_producto}}
+
+    {% endfor %}  
     <!--imagen apadrinacion-->
     <div align="center">
         <img src='{%static "img/apadrinacion_1.0.jpeg"%}' alt="" id="imagen_apadrinacion" >
